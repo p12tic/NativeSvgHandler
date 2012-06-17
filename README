@@ -6,4 +6,4 @@ clients for client-side rendering. No configuration is required, just add the
 following to your LocalSettings.php once the source of the extension is copied
 to the extensions/ directory:
 
-require_once("$IP/extensions/NativeSVG/NativeSVG.php");
+require_once("$IP/extensions/NativeSvgHandler/NativeSvgHandler.php");
