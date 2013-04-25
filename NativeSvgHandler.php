@@ -30,9 +30,11 @@ $wgExtensionCredits['media'][] = array(
     'path'           => __FILE__,
     'name'           => 'NativeSvgHandler',
     'author'         => 'p12',
-    'descriptionmsg' => 'Serves SVG images directly to clients',
+    'descriptionmsg' => 'nativesvghandler_desc',
     //'url'            =>
 );
+
+$wgExtensionMessagesFiles['NativeSvgHandler'] = dirname( __FILE__ ) . '/' . 'NativeSvgHandler.i18n.php';
 
 /**
  * Handler for SVG images that will be resized by the clients.
