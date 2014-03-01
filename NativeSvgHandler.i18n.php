@@ -20,3 +20,11 @@ $messages['de'] = array(
     'nativesvghandler' => 'Native SVG Handler',
     'nativesvghandler_desc' => 'Ermöglicht die direkte Darstellung von SVG-Dateien im Client'
 );
+
+/** Swedish (svenska)
+* @author Rotsee
+*/
+$messages['sv'] = array(
+    'nativesvghandler' => 'Inbäddad SVG-visning',
+    'nativesvghandler_desc' => 'Visar SVG-bilder direkt i webbläsaren'
+);
