@@ -29,10 +29,10 @@ if ( !in_array( 'svg', $wgFileExtensions ) ) {
 $wgExtensionCredits['media'][] = array(
     'path'           => __FILE__,
     'name'           => 'NativeSvgHandler',
-    'author'         => 'Povilas Kanapickas',
+    'author'         => 'Povilas Kanapickas, Ilaï Deutel',
     'descriptionmsg' => 'nativesvghandler_desc',
     'url'            => 'https://github.com/p12tic/NativeSvgHandler',
-    'version'        => '1.1',
+    'version'        => '1.2',
 );
 
 $wgExtensionMessagesFiles['NativeSvgHandler'] = dirname( __FILE__ ) . '/' . 'NativeSvgHandler.i18n.php';
@@ -61,8 +61,12 @@ class NativeSvgHandler extends SvgHandler {
             return new TransformParameterError( $params );
         }
 
-        return new SvgImage($image, $image->getURL(), $params['width'],
+		if(!isset($wgNativeSvgHandlerEnableLinks) || $wgNativeSvgHandlerEnableLinks) {
+			return new ThumbnailImage($image, $image->getURL(), $params['width'],
                             $params['height'], $image->getPath() );
+		}
+		return new SvgImage($image, $image->getURL(), $params['width'],
+                            $params['height'], $image->getPath() );		
     }
 
     function getThumbType($ext, $mime, $params = null) {
