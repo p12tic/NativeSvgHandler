@@ -28,3 +28,11 @@ $messages['sv'] = array(
     'nativesvghandler' => 'Inbäddad SVG-visning',
     'nativesvghandler_desc' => 'Visar SVG-bilder direkt i webbläsaren'
 );
+
+/** French (français)
+* @author ilai-deutel
+*/
+$messages['fr'] = array(
+    'nativesvghandler' => 'Native SVG Handler',
+    'nativesvghandler_desc' => 'Permet l\'affichage des fichiers SVG directement par le navigateur'
+);
