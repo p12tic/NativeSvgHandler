@@ -3,7 +3,8 @@ Information
 
 This is a MediaWiki extension which allows SVG files to by served directly to
 clients for client-side rendering. No configuration is required, just add the
-following line to your LocalSettings.php once the source of the extension is
+following lines to your LocalSettings.php once the source of the extension is
 copied to the extensions/ directory:
 
 require_once "$IP/extensions/NativeSvgHandler/NativeSvgHandler.php";
+$wgNativeSvgHandlerEnableLinks = true; //Set to false to disable links over SVG images
