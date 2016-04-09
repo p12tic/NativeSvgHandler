@@ -61,12 +61,13 @@ class NativeSvgHandler extends SvgHandler {
             return new TransformParameterError( $params );
         }
 
-		if(!isset($wgNativeSvgHandlerEnableLinks) || $wgNativeSvgHandlerEnableLinks) {
-			return new ThumbnailImage($image, $image->getURL(), $params['width'],
+        global $wgNativeSvgHandlerEnableLinks;
+        if(!isset($wgNativeSvgHandlerEnableLinks) || $wgNativeSvgHandlerEnableLinks) {
+            return new ThumbnailImage($image, $image->getURL(), $params['width'],
+                                      $params['height'], $image->getPath() );
+        }
+        return new SvgImage($image, $image->getURL(), $params['width'],
                             $params['height'], $image->getPath() );
-		}
-		return new SvgImage($image, $image->getURL(), $params['width'],
-                            $params['height'], $image->getPath() );		
     }
 
     function getThumbType($ext, $mime, $params = null) {
