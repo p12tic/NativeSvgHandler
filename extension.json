@@ -1,0 +1,13 @@
+{
+	"name": "NativeSvgHandler",
+	"author": "Povilas Kanapickas, Ilaï Deutel",
+	"url": "https://github.com/p12tic/NativeSvgHandler",
+	"descriptionmsg": "The NativeSvgHandler extension allows SVG files to by served directly to clients for client-side rendering.",
+	"type": "extension" ,
+	
+	"AutoloadClasses": {
+		"SvgImage": "NativeSvgHandler.php"
+    "NativeSvgHandler": "NativeSvgHandler.php"
+	},
+	"manifest_version": 1
+}
