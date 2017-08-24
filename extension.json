@@ -1,0 +1,21 @@
+{
+"name": "LastModified",
+	"version": "1.2",
+	"author": [
+		"Povilas Kanapickas",
+		"[Ilaï Deutel]",
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:NativeSvgHandler",
+	"descriptionmsg": "nativesvghandler_desc",
+	"license-name": "GPL-2.0+",
+	"config": {
+		"wgNativeSvgHandlerEnableLinks": {
+			"value": true,
+			"description": "Set false to disable links over SVG images, the default value is true."
+		},
+	},
+	"Hooks": {
+	// I'm not sure of the hooks exactly, so please complete that yourself.
+	},
+	"manifest_version": 2
+}
