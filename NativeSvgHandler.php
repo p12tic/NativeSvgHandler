@@ -33,6 +33,7 @@ $wgExtensionCredits['media'][] = array(
     'descriptionmsg' => 'nativesvghandler_desc',
     'url'            => 'https://github.com/p12tic/NativeSvgHandler',
     'version'        => '1.2',
+    'license-name'   => 'GPL-3.0-only',
 );
 
 $wgExtensionMessagesFiles['NativeSvgHandler'] = dirname( __FILE__ ) . '/' . 'NativeSvgHandler.i18n.php';
